@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Heart } from "lucide-react";
 import { motion, AnimatePresence, Transition } from "framer-motion";
-import { Button, buttonStyles } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 type HeartButtonProps = {
@@ -142,8 +142,8 @@ const HeartButton = React.forwardRef<HTMLDivElement, HeartButtonProps>(
                     transition={{
                       duration: particle.transition.duration,
                       delay: particle.transition.delay,
-                      ease: particle.transition.ease as any,
-                    } as Transition<any>}
+                      ease: particle.transition.ease as string,
+                    } as Transition}
                     exit={{ opacity: 0 }}
                   />
                 );

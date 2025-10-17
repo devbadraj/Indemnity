@@ -108,7 +108,9 @@ const DialogDescription = ({ className, ref, ...props }: DialogDescriptionProps)
   />
 )
 
-interface DialogBodyProps extends React.ComponentProps<"div"> {}
+interface DialogBodyProps extends React.ComponentProps<"div"> {
+  ref?: React.Ref<HTMLDivElement>;
+}
 const DialogBody = ({ className, ref, ...props }: DialogBodyProps) => (
   <div
     data-slot="dialog-body"
@@ -121,7 +123,9 @@ const DialogBody = ({ className, ref, ...props }: DialogBodyProps) => (
   />
 )
 
-interface DialogFooterProps extends React.ComponentProps<"div"> {}
+interface DialogFooterProps extends React.ComponentProps<"div"> {
+  className?: string;
+}
 const DialogFooter = ({ className, ...props }: DialogFooterProps) => {
   const footerRef = useRef<HTMLDivElement>(null)
 
