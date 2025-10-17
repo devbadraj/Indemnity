@@ -26,11 +26,11 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-medium mb-4">Community</h4>
+            <h4 className="font-medium mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">Discord</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Telegram</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Twitter</a></li>
+              <li><a target="_blank" href="https://linkedin.com/in/devbadraj" className="hover:text-foreground transition-colors">LinkedIn</a></li>
+              <li><a target="_blank" href="https://t.me/dbadraj" className="hover:text-foreground transition-colors">Telegram</a></li>
+              <li><a target="_blank" href="https://x.com/DevBadraj" className="hover:text-foreground transition-colors">Twitter</a></li>
             </ul>
           </div>
         </div>

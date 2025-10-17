@@ -63,22 +63,23 @@ const createStarVariants = (index: number): Variants => ({
 });
 
 const DayNightSwitch = React.forwardRef<HTMLDivElement, DayNightSwitchProps>(
-  ({ className, defaultChecked = true, onToggle, ...restProps }, ref) => {
+  ({ className, defaultChecked = false, onToggle, ...restProps }, ref) => {
     const id = React.useId();
     const [checked, setChecked] = React.useState<boolean>(defaultChecked);
 
     React.useEffect(() => {
-      // Initialize from saved theme or system preference
+      // Sync with current theme state (set by layout script)
       try {
-        const saved = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
-        const prefersDark = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const isDark = saved ? saved === "dark" : prefersDark;
         if (typeof document !== "undefined") {
-          document.documentElement.classList.toggle("dark", isDark);
+          const isDark = document.documentElement.classList.contains("dark");
+          setChecked(!isDark); // checked means day
         }
-        setChecked(!isDark); // checked means day
       } catch {
-        // no-op
+        // Default to dark mode on error
+        if (typeof document !== "undefined") {
+          document.documentElement.classList.add("dark");
+        }
+        setChecked(false); // unchecked = night = dark
       }
     }, []);
 

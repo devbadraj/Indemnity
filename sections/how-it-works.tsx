@@ -20,7 +20,7 @@ export default function HowItWorks() {
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <Wallet className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold mb-2"><em>Connect</em> your wallet</h3>
+            <h3 className="text-lg font-semibold mb-2"><strong>Connect</strong> your wallet</h3>
           </div>
 
           <div className="text-center">
@@ -34,7 +34,7 @@ export default function HowItWorks() {
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Get a <em>customized</em> life or health premium proposal</h3>
+            <h3 className="text-lg font-semibold mb-2">Get a <strong>customized</strong> life or health premium proposal</h3>
           </div>
 
           <div className="text-center">
