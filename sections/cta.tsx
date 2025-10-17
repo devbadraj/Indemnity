@@ -3,7 +3,7 @@ import { Clock } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="py-20 border-t">
+    <section className="py-32 border-t">
       <div className="max-w-4xl mx-auto px-8 sm:px-12 lg:px-16 relative">
         {/* Vertical Separators */}
         <div className="absolute left-0 top-0 bottom-0 w-px bg-border"></div>

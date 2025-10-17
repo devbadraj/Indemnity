@@ -2,13 +2,13 @@ import { Globe } from "lucide-react";
 
 export default function WhySolana() {
   return (
-    <section className="py-20">
+    <section className="py-32">
       <div className="max-w-4xl mx-auto px-8 sm:px-12 lg:px-16 relative">
         {/* Vertical Separators */}
         <div className="absolute left-0 top-0 bottom-0 w-px bg-border"></div>
         <div className="absolute right-0 top-0 bottom-0 w-px bg-border"></div>
         
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <Globe className="w-8 h-8 text-primary" />
           </div>

@@ -318,6 +318,12 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Times New Roman italic styling */
+  em, i {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
 }
 
 /* Margin pattern strips: theme-colored background masked by a repeating SVG pattern */

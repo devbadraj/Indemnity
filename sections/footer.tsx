@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
-    <footer className="py-12 border-t">
+    <footer className="py-16 border-t">
       <div className="max-w-4xl mx-auto px-8 sm:px-12 lg:px-16 relative">
         {/* Vertical Separators */}
         <div className="absolute left-0 top-0 bottom-0 w-px bg-border"></div>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <Separator className="my-8" />
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Indemnity. All rights reserved.</p>
+          <p>&copy; 2025 Indemnity. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
             <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
